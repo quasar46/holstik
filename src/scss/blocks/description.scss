@@ -1,0 +1,27 @@
+.description {
+    margin-bottom: 120px;
+    @media (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+}
+
+.description__wrapper {
+    h2 {
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+            margin-bottom: 15px;
+        }
+    }
+    p {
+        font-size: 21px;
+        font-weight: 200;
+        color: $color-text;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        @media (max-width: 768px) {
+            font-size: 15px;
+        }
+    }
+}

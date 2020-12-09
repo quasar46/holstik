@@ -1,0 +1,316 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				section.header
+					.container
+						.header__wrapper
+							ul
+								li.city#city
+									div ГОРОД: <span class="und">Курск</span>
+								li
+									a(href="").up vk
+								li
+									a(href="").up instagram
+							.logo
+								img(src="images/logo.svg" alt="")
+
+				section.hero
+					.container
+						.hero__wrapper
+							ul
+								li
+									h2 СОЗДАЙ идеальный подарок вместе с нами !
+								li
+									p Сделай из фото шедевр! 
+									p Всего от 990 руб. Изготовление за 1-2 дня!
+								li
+									a(href="#request").button получить макет сегодня
+
+				section.description
+					.container
+						.description__wrapper
+							h2.main-title мы более 5 лет специализируемся на изготовлении фото (портретов) на холсте и модульных картин
+							.description__content
+								p Вы можете заказать, как отдельный холст, так и модульную картину, с багетом или без. Выбор только за вам! На сайте Вы можете наглядно оценить размеры холстов. Имейте ввиду, что Вы всегда можете заказать практически любой размер.
+								p Хотите сравнить наши цены и качество с другими студиями? Мы уже сделали это за Вас! Нашли цену ниже? Спросите нас - "почему" ? Возможно, используется дешевый синтетический холст, подрамник сделан из обычных реек, которых со временем начинает сильно вести, или печать производится вредными красками, неустойчивыми к воздействию среды. Наши холсты лишены всех этих недостатков и будут радовать Вас и Ваших близких долгие годы !
+
+				section.action
+					.container
+						.action__wrapper
+							.action__header
+								h2.main-title Что мы делаем
+								select#select
+									option(value="portret1") Выбрать стиль портрета
+									option(value="portret2") Выбрать стиль портрета
+							.action__content
+								.action-slick-wrap.active#portret1
+									ul.action-slick
+										li.item
+											a(href="images/action/full/image1.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image1.jpg" alt="")
+										li.item
+											a(href="images/action/full/image2.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image2.jpg" alt="")
+										li.item
+											a(href="images/action/full/image3.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image3.jpg" alt="")
+										li.item
+											a(href="images/action/full/image4.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image4.jpg" alt="")
+										li.item
+											a(href="images/action/full/image5.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image5.jpg" alt="")
+										li.item
+											a(href="images/action/full/image6.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image6.jpg" alt="")
+										li.item
+											a(href="images/action/full/image7.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image7.jpg" alt="")
+										li.item
+											a(href="images/action/full/image8.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image8.jpg" alt="")
+										li.item
+											a(href="images/action/full/image9.jpg" data-fancybox="images" data-caption="Что мы делаем")
+												img(src="images/action/image9.jpg" alt="")
+								.action-slick-wrap#portret2
+									ul.action-slick
+										li.item
+											a(href="images/action/image1.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image1.jpg" alt="")
+										li.item
+											a(href="images/action/image2.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image2.jpg" alt="")
+										li.item
+											a(href="images/action/image3.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image3.jpg" alt="")
+										li.item
+											a(href="images/action/image4.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image4.jpg" alt="")
+										li.item
+											a(href="images/action/image5.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image5.jpg" alt="")
+										li.item
+											a(href="images/action/image6.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image6.jpg" alt="")
+										li.item
+											a(href="images/action/image7.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image7.jpg" alt="")
+										li.item
+											a(href="images/action/image8.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image8.jpg" alt="")
+										li.item
+											a(href="images/action/image9.jpg" data-fancybox data-caption="Что мы делаем")
+												img(src="images/action/image9.jpg" alt="")
+							a(href="#request").order заказать макет сейчас
+
+				section.sizes
+					.container
+						.sizes__wrapper
+							h2.main-title.main-title--mode Популярные размеры
+							.sizes__desctop
+								img(src="images/sizes/picture.png" alt="")
+							ul.mobile.sizes-slick
+								li.item.item--1
+									img(src="images/sizes/image1.png" alt="")
+								li.item.item--2
+									img(src="images/sizes/image2.png" alt="")
+								li.item.item--3
+									img(src="images/sizes/image3.png" alt="")
+								li.item.item--4
+									img(src="images/sizes/image4.png" alt="")
+
+
+				section.delivery
+					.container
+						.delivery__wrapper.desctop
+							.delivery__row.delivery__row--1
+								ul.list-1
+									li
+										h3 Разные способы оплаты
+										p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+									li
+										h3 ДОСТАВКА ПО ВСЕЙ РОССИИ
+										p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+								ul
+									li
+										span.amount 5000
+										p довольных клиентов
+							.delivery__row.delivery__row--2
+								ul
+									li
+										span.amount.amount--mode 10
+										p лет ганатии на холст 
+									li
+										span.amount.amount--mode >10
+										p видов обработки
+								ul
+									li
+										h3 Бесплатная цветокоррекция
+										p а так же легкая ретушь
+
+						.delivery__wrapper.mobile
+							.delivery__row
+								h3 Разные способы оплаты
+								p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. 
+							.delivery__row
+								h3 Доставка по всей России
+								p По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+							.delivery__row
+								ul
+									li
+										span.amount 10
+										p лет ганатии на холст 
+									li
+										spam.amount > 10
+										p видов обработки 
+									li
+										span.amount 5000
+										p довольных клиентов
+									li
+										span.amount.amount--mode Бесплатная цветокоррекция
+										p а так же легкая ретушь
+
+
+
+				section.stages
+					.container
+						.stages__wrapper
+							h2.main-title Этапы СОЗДАНИЯ
+							ul.stages-slick
+								li
+									<svg width="100%" height="130" viewBox="0 0 100 115" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g><circle cx="71.321" cy="57.261" r="12.847" style="fill:#009693;"/><circle cx="49.482" cy="63.684" r="6.423" style="fill:#009693;"/><circle cx="36.635" cy="36.706" r="6.423" style="fill:#c466a9;"/><path d="M0.593,36l49.176,43.463l-49.176,-39.716l0,-3.747Z" style="fill:#0d0d0d;"/><path d="M98.945,39.463l-49.176,-39.463l49.176,36.06l0,3.403Z" style="fill:#0d0d0d;"/><path d="M0.593,39.463l49.176,-39.463l-49.176,36.06l0,3.403Z" style="fill:#0d0d0d;"/><path d="M0.945,114.295l98.133,0l-98.133,-3l0,3Z" style="fill:#0d0d0d;"/><path d="M96.605,37.5l-46.836,41.963l48.824,-39.716l-1.988,-2.247Z" style="fill:#0d0d0d;"/><path d="M74.86,22.269l-49.868,0l-0.244,0.009l0.061,0.601l50.051,0.25l0,-0.86Z" style="fill:#0d0d0d;"/><path d="M75.36,58.242l-0.013,-35.973l-0.796,0.045l-0.331,35.928l1.14,0Z" style="fill:#0d0d0d;"/><path d="M25.318,58.242l-0.013,-35.973l-0.796,0.045l-0.331,35.928l1.14,0Z" style="fill:#0d0d0d;"/><path d="M3.053,34.055l-2.217,80.24l-0.836,-78.368l3.053,-1.872Z" style="fill:#0d0d0d;"/><path d="M95.892,34.055l2.217,80.24l0.836,-78.368l-3.053,-1.872Z" style="fill:#0d0d0d;"/></g></svg>
+									p ОТПРАВьТЕ НАМ ФОТО
+								li
+									<svg width="100%" height="130" viewBox="0 0 118 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"><g><circle cx="89.152" cy="47.936" r="19.286" style="fill:#009693;"/><circle cx="55.402" cy="63.365" r="9.643" style="fill:#009693;"/><circle cx="37.081" cy="21.901" r="9.643" style="fill:#c466a9;"/><path d="M17.872,3l98.132,0l-98.132,-3l0,3Z" style="fill:#0d0d0d;"/><path d="M117.004,82.266l-98.132,0l98.132,3l0,-3Z" style="fill:#0d0d0d;"/><path d="M111.773,92.507l-7.036,6.9l8.054,-5.862l-1.018,-1.038Z" style="fill:#0d0d0d;"/><path d="M22.935,93.599l7.037,-6.9l-8.054,5.862l1.017,1.038Z" style="fill:#0d0d0d;"/><path d="M23.621,93.623l88.107,-0.013l-0.111,-0.796l-87.996,-0.331l0,1.14Z" style="fill:#0d0d0d;"/><path d="M111.79,94.245l-6.933,-7.546l8.115,6.736l-1.182,0.81Z" style="fill:#0d0d0d;"/><path d="M22.918,91.861l6.933,7.546l-8.114,-6.736l1.181,-0.81Z" style="fill:#0d0d0d;"/><path d="M6.9,90.662l-6.9,-7.036l5.862,8.054l1.038,-1.018Z" style="fill:#0d0d0d;"/><path d="M5.808,1.824l6.9,7.037l-5.862,-8.054l-1.038,1.017Z" style="fill:#0d0d0d;"/><path d="M5.784,2.511l0.013,88.106l0.796,-0.111l0.331,-87.995l-1.14,0Z" style="fill:#0d0d0d;"/><path d="M5.162,90.68l7.546,-6.933l-6.736,8.114l-0.81,-1.181Z" style="fill:#0d0d0d;"/><path d="M7.546,1.807l-7.546,6.933l6.736,-8.114l0.81,1.181Z" style="fill:#0d0d0d;"/><path d="M20.979,0l-2.216,82.266l-0.836,-80.348l3.052,-1.918Z" style="fill:#0d0d0d;"/><path d="M113.897,85.266l2.216,-82.266l0.836,80.347l-3.052,1.919Z" style="fill:#0d0d0d;"/></g></svg>
+									p УТВЕРДИТЕ РАЗМЕР МАКЕТА
+								li
+									<svg width="100%" height="130" viewBox="0 0 119 131" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"><g><circle cx="102.591" cy="22.924" r="12.789" style="fill:#c466a9;"/><circle cx="62.508" cy="72.302" r="44.329" style="fill:#009693;"/><path d="M61.396,16.994c31.125,0 56.395,25.27 56.395,56.396c0,31.126 -25.27,56.396 -56.395,56.396" style="fill:none;stroke:#0d0d0d;stroke-width:2px;"/><path d="M61.396,129.786c-3.847,0 -7.604,-0.386 -11.234,-1.121" style="fill:none;stroke:#0d0d0d;stroke-width:2px;"/><path d="M44.759,19.492c5.26,-1.623 10.847,-2.498 16.637,-2.498" style="fill:none;stroke:#0d0d0d;stroke-width:2px;"/><path d="M56.396,41.243l-19.923,0.44l19.917,2.987l0.006,-3.427Z" style="fill:#0d0d0d;"/><path d="M57.727,17.371l2.022,10.731l0.954,-11.108l-2.976,0.377Z" style="fill:#0d0d0d;"/><path d="M51.504,10.522c3.456,-14.303 11.592,-11.841 16.048,-5.421c1.525,2.197 1.13,2.091 2.83,5.33c-1.98,-2.952 -1.861,-2.39 -3.633,-4.23c-6.376,-6.617 -15.731,-8.501 -18.999,4.23l3.754,0.091Z" style="fill:#0d0d0d;"/><path d="M109.702,45.108l-7.949,5.207l9.566,-2.679l-1.617,-2.528Z" style="fill:#0d0d0d;"/><path d="M111.21,99.68l-10.062,-4.168l8.811,6.895l1.251,-2.727Z" style="fill:#0d0d0d;"/><path d="M89.823,24.801l-5.064,9.105l7.803,-7.883l-2.739,-1.222Z" style="fill:#0d0d0d;"/><path d="M116.92,72.168l-8.857,0.863l8.983,2.134l-0.126,-2.997Z" style="fill:#0d0d0d;"/><path d="M92.359,120.392l-6.6,-7.664l4.148,9.391l2.452,-1.727Z" style="fill:#0d0d0d;"/><path d="M64.841,129.079l-1.453,-10.794l-1.533,11.083l2.986,-0.289Z" style="fill:#0d0d0d;"/><path d="M56.396,105.536l-19.923,-0.439l19.917,-2.987l0.006,3.426Z" style="fill:#0d0d0d;"/><path d="M56.396,53.807l-32.947,0.423l32.941,3.003l0.006,-3.426Z" style="fill:#0d0d0d;"/><path d="M56.396,93.869l-39.843,-0.416l39.837,-3.011l0.006,3.427Z" style="fill:#0d0d0d;"/><path d="M56.396,66.921l-47.912,0.405l47.906,3.021l0.006,-3.426Z" style="fill:#0d0d0d;"/><path d="M56.396,82.359l-56.396,-0.395l56.39,-3.031l0.006,3.426Z" style="fill:#0d0d0d;"/><g><path d="M72.975,75.252l27.104,-29.276l-24.814,31.628l-2.29,-2.352Z" style="fill:#0d0d0d;"/><path d="M66.839,67.759l35.752,-23.6l-34.015,26.421l-1.737,-2.821Z" style="fill:#0d0d0d;"/></g><path d="M103.576,25.24l-6.581,-5.386l-0.043,-0.02l-1.475,1.29l7.457,5.758l0.642,-1.642Z" style="fill:#0d0d0d;"/><path d="M107.194,18.875l-5.386,6.581l-0.019,0.042l1.289,1.476l5.758,-7.457l-1.642,-0.642Z" style="fill:#0d0d0d;"/><path d="M109.043,19.235l-7.894,-5.787l-0.044,-0.021l-0.488,1.452l6.797,5.836l0.005,-0.005l1.624,-1.475Z" style="fill:#0d0d0d;"/><path d="M101.111,13.42l-5.548,7.568l-0.02,0.042l1.44,0.555l5.608,-6.536l-1.48,-1.629Z" style="fill:#0d0d0d;"/><path d="M98.507,23.098l-4.075,4.77l-0.019,0.042l1.369,0.99l4.285,-4.658l-1.56,-1.144Z" style="fill:#0d0d0d;"/><path d="M55.753,10.687l0.365,6.263l0.015,0.044l1.673,-0.235l-0.136,-6.328l-1.917,0.256Z" style="fill:#0d0d0d;"/><path d="M60.783,10.436l0.364,6.263l0.016,0.044l1.672,-0.235l-0.135,-6.328l-1.917,0.256Z" style="fill:#0d0d0d;"/><path d="M61.118,11.535l9.264,-1.104l-1.261,-1.929l-8.338,1.128l0.335,1.905Z" style="fill:#0d0d0d;"/><path d="M57.806,9.698l-6.256,-0.467l-3.046,0.009l-0.754,1.191l10.056,1.201l0,-1.934Z" style="fill:#0d0d0d;"/><path d="M75.244,79.027l27.347,-35.043l-36.107,23.901l8.76,11.142Z" style="fill:#0d0d0d;"/></g></svg>
+									p ПОДОЖДИТЕ 1-2 ДНЯ
+								li
+									<svg width="100%" height="130" viewBox="0 0 130 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"><g><circle cx="54.991" cy="12.789" r="12.789" style="fill:#009693;"/><circle cx="111.066" cy="76.789" r="12.789" style="fill:#009693;"/><circle cx="102.912" cy="34.789" r="12.789" style="fill:#c466a9;"/><g><path d="M55.252,13.013l-5.925,39.454l2.708,-40.108l3.217,0.654Z" style="fill:#0d0d0d;"/><path d="M123.553,40.93l-47.347,21.595l49.323,-17.797l-1.976,-3.798Z" style="fill:#0d0d0d;"/><path d="M64.541,15.753l-16.267,39.629l13.244,-40.984l3.023,1.355Z" style="fill:#0d0d0d;"/><path d="M116.783,30.264l-43.855,34.628l46.638,-31.322l-2.783,-3.306Z" style="fill:#0d0d0d;"/></g><path d="M92.275,92.19l-92.275,27.244l95.108,-24.362l-2.833,-2.882Z" style="fill:#0d0d0d;"/><path d="M10.444,92.19l-10.444,27.244l13.245,-26.17l-2.801,-1.074Z" style="fill:#0d0d0d;"/><path d="M66.725,38.124l-10.559,24.019l17.477,-20.978l-6.918,-3.041Z" style="fill:#0d0d0d;"/><path d="M107.613,65.956l-29.754,4.381l28.733,6.256l1.021,-10.637Z" style="fill:#0d0d0d;"/><path d="M34.245,109.69c0,0 -17.259,-8.84 -16.245,-33.097c0,0 10.578,32.896 25.081,31.097" style="fill:#0d0d0d;"/><path d="M56.156,103.812c0,0 -29.578,-4.482 -34.74,-50.439c0,0 5.833,11.689 13.807,25.006c8.735,14.589 24.692,26.024 33.523,20.701" style="fill:#0d0d0d;"/><path d="M82.171,97.812c0,0 -11.124,-3.6 -19.577,-10.612c-2.828,-2.345 -9.859,-6.456 -15.013,-12.336c-7.11,-8.112 -11.453,-17.689 -13.566,-23.491c-3.441,-9.449 -2.766,-19.727 0.201,-20.545c0.256,-0.071 -1.503,4.631 -0.201,10.053c1.596,6.644 6.325,14.369 6.946,15.712c2.094,4.526 5.029,9.701 7.277,12.786c3.181,4.366 14.059,13.193 18.141,15.899c6.54,4.336 20.357,10.434 26.382,6.802" style="fill:#0d0d0d;"/><path d="M36.847,7.461l1.743,5.366l5.642,0l-4.564,3.316l1.743,5.366l-4.564,-3.316l-4.565,3.316l1.744,-5.366l-4.565,-3.316l5.642,0l1.744,-5.366Z" style="fill:none;stroke:#0d0d0d;stroke-width:1px;"/><path d="M83.941,27.99l3.625,4.323l5.232,-2.112l-2.992,4.784l3.625,4.323l-5.474,-1.366l-2.992,4.783l-0.391,-5.628l-5.474,-1.367l5.232,-2.112l-0.391,-5.628Z" style="fill:none;stroke:#0d0d0d;stroke-width:1px;"/><path d="M121.847,61.461l1.743,5.366l5.642,0l-4.564,3.316l1.743,5.366l-4.564,-3.316l-4.565,3.316l1.744,-5.366l-4.565,-3.316l5.642,0l1.744,-5.366Z" style="fill:none;stroke:#0d0d0d;stroke-width:1px;"/></g></svg>
+									p РАДУЙТЕСЬ ПОКУПКЕ
+
+				section.request#request
+					.container
+						.request__wrapper
+							h2.main-title Оставьте заявку
+							form(action="get")
+								.form__wrapper
+									.row
+										.date
+											h3.title-form Данные для связи:
+											ul
+												li
+													input(type="text" placeholder="ФИО")
+												li
+													input(type="text" placeholder="E-mail")
+												li
+													input(type="text" placeholder="телефон")
+												li
+													input(type="text" placeholder="ваши пожелания")
+										.format
+											h3.title-form Формат:
+											ul
+												li
+													input(type="checkbox" id="check1")
+													label(for="check1") 30Х40 - 750 руб.
+												li
+													input(type="checkbox" id="check2")
+													label(for="check2") 40x60 - 1250 руб.
+												li
+													input(type="checkbox" id="check3")
+													label(for="check3") 50x70 - 1690 руб.
+												li
+													input(type="checkbox" id="check4")
+													label(for="check4") 60x80 - 2150 руб.
+												li
+													input(type="checkbox" id="check5")
+													label(for="check5") Другой формат
+											a(href="") Какой формат выбрать?
+									.row
+										.download
+											a(href="") Выберите файл для загрузки
+										.additionally
+											h3.title-form Дополнительная обработка: 
+											ul
+												li
+													input(type="checkbox" id="check6")
+													label(for="check6") Пример - 390 руб.
+												li
+													input(type="checkbox" id="check7")
+													label(for="check7") Пример 2 - 500 руб.
+												li
+													input(type="checkbox" id="check8")
+													label(for="check8") Пример с описанием - 1500 руб.
+								input(type="submit")
+
+				section.clients
+					.container
+						.clients__wrapper
+							h2.main-title.main-title--mode Наши довольные клиенты
+							ul.clients-slick
+								li
+									img(src="images/clients/image1.jpg" alt="")
+								li
+									img(src="images/clients/image2.jpg" alt="")
+								li
+									img(src="images/clients/image3.jpg" alt="")
+								li
+									img(src="images/clients/image4.jpg" alt="")
+								li
+									img(src="images/clients/image1.jpg" alt="")
+								li
+									img(src="images/clients/image2.jpg" alt="")
+
+							a(href="#request").order заказать макет сейчас
+
+				section.question
+					.container
+						.question__wrapper
+							h2.main-title Вопрос - ответ
+							.tabs
+								.tab
+									h3 Сколько времени занимает изготовление фото на холсте?
+									p Изготовление холста обычно занимает 3 рабочих дня со дня приема заказа. Если вам нужно экспресс-изготовление, пожалуйста, свяжитесь с нами. (Опция экспресс-изготовление осуществляется за дополнительную плату - +50% от стоимости).
+								.tab
+									h3 Сколько времени займет получение бесплатного цифрового макета?
+									p Изготовление холста обычно занимает 3 рабочих дня со дня приема заказа. Если вам нужно экспресс-изготовление, пожалуйста, свяжитесь с нами. (Опция экспресс-изготовление осуществляется за дополнительную плату - +50% от стоимости).
+								.tab
+									h3 Как я могу изменить адрес доставки или адрес для выставления счета?
+									p Изготовление холста обычно занимает 3 рабочих дня со дня приема заказа. Если вам нужно экспресс-изготовление, пожалуйста, свяжитесь с нами. (Опция экспресс-изготовление осуществляется за дополнительную плату - +50% от стоимости).
+							//- button.question-btn Задать вопрос
+
+				section.footer
+					.container
+						.footer__wrapper
+							.contacts
+								p адрес: г. Курск, ул. Ленина 60,  ТЦ "МОСКВА" 2-й этаж
+								p телефон: <a href="tel:'89030279977'">8 (903) 027 99 77</a>
+							ul
+								li.city
+									a(href="").und.up YANDEX Карты
+								li.vk
+									a(href="").up  vk
+								li
+									a(href="").up  instagram
+
+				section.popup
+					.popup__wrapper
+						h2 Ваш город <span>Курск</span>?
+						.buttons
+							button.yes Да
+							select#changeCity
+								option(selected="selected") Нет выбрать другой
+								option(value="Город 1") Город 1
+								option(value="Город 2") город 2
+
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug

@@ -1,0 +1,228 @@
+.request {
+    padding-bottom: 80px;
+    @media (max-width: 768px) {
+        padding-bottom: 60px;
+    }
+}
+
+.request__wrapper {
+    h2.main-title {
+        margin-bottom: 50px;
+        @media (max-width: 768px) {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    }
+}
+form {
+    display: flex;
+    flex-direction: column;
+    input[type="submit"] {
+        align-self: center;
+        font-size: 19px;
+        font-weight: 600;
+        background-color: $color-green;
+        padding: 15px 20px;
+        color: $color-white;
+        border: none;
+        text-transform: uppercase;
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+}
+.form__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    .row {
+        display: flex;
+        h3.title-form {
+            font-size: 21px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+            @media (max-width: 768px) {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+        .additionally,
+        .format {
+            flex: 1 0 350px;
+            max-width: 350px;
+            @media (max-width: 768px) {
+                flex: auto;
+            }
+        }
+        .date {
+            flex: 1 0 auto;
+            max-width: 722px;
+            margin-right: 90px;
+            input {
+                border: none;
+                border-bottom: 1px solid #808080;
+                padding: 10px 20px;
+                padding-top: 25px;
+                padding-bottom: 10px;
+                font-size: 17px;
+                font-weight: 300;
+                text-transform: uppercase;
+                width: 100%;
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                    padding: 10px 5px;
+                    margin-top: 10px;
+                }
+            }
+            @media (max-width: 768px) {
+                flex: 1 0 auto;
+                margin-right: 0;
+                // margin-bottom: 30px;
+                margin-bottom: 90px;
+            }
+        }
+        .download {
+            flex: 1 0 auto;
+            max-width: 722px;
+            margin-right: 90px;
+
+            a {
+                font-size: 19px;
+                text-transform: uppercase;
+                color: $color-text;
+                position: relative;
+                padding-left: 35px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    background-image: url("../images/svg/download.svg");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 30px;
+                    height: 30px;
+                }
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                    padding-left: 30px;
+                }
+            }
+            @media (max-width: 768px) {
+                margin-right: 0;
+                flex: auto;
+                position: absolute;
+                top: -280px;
+            }
+        }
+        .format {
+            ul {
+                margin-bottom: 30px;
+
+                li {
+                    margin-bottom: 20px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    @media (max-width: 768px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            a {
+                font-size: 17px;
+                text-decoration: underline;
+                text-transform: uppercase;
+                color: $color-text;
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                }
+            }
+
+            label {
+                position: relative;
+                padding-left: 35px;
+                text-transform: uppercase;
+                font-size: 17px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 13px;
+                    height: 16px;
+                    border: 1px solid #808080;
+                    @media (max-width: 768px) {
+                        width: 11px;
+                        height: 14px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                }
+            }
+            input[type="checkbox"] {
+                display: none;
+                &:checked + label::before {
+                    background-image: url("../images/svg/check.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+        .additionally {
+            ul {
+                li {
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    label {
+                        position: relative;
+                        padding-left: 35px;
+                        text-transform: uppercase;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 13px;
+                            height: 16px;
+                            border: 1px solid #808080;
+                            @media (max-width: 768px) {
+                                width: 11px;
+                                height: 14px;
+                            }
+                        }
+                        @media (max-width: 768px) {
+                            font-size: 13px;
+                        }
+                    }
+                    input[type="checkbox"] {
+                        display: none;
+                        &:checked + label::before {
+                            background-image: url("../images/svg/check.svg");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                    }
+                    @media(max-width: 768px) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2) {
+            position: relative;
+            padding-top: 30px;
+            @media (max-width: 768px) {
+                padding-top: 40px;
+            }
+        }
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.question {
+    margin-bottom: 120px;
+}
+
+.question__wrapper {
+    display: flex;
+    flex-direction: column;
+    button.question-btn {
+        background-color: $color-green;
+        align-self: center;
+        border: none;
+        color: $color-white;
+        text-transform: uppercase;
+        padding: 15px 20px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    h2.titme-main {
+        margin-bottom: 50px;
+    }
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        .tab {
+            border-bottom: 1px solid #808080;
+            padding: 30px 15px;
+            cursor: pointer;
+            h3 {
+                font-size: 21px;
+                font-weight: 400;
+                text-transform: uppercase;
+                position: relative;
+                padding-right: 50px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-image: url("../images/svg/arrow.svg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    width: 36px;
+                    height: 20px;
+                    @media (max-width: 768px) {
+                        width: 20px;
+                        height: 10px;
+                    }
+                }
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 1.4;
+                }
+            }
+            p {
+                display: none;
+                padding-top: 20px;
+                font-size: 21px;
+                font-weight: 300;
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                }
+            }
+            &.active {
+                h3 {
+                    &::after {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            @media (max-width: 768px) {
+                padding: 19px 7px;
+            }
+        }
+    }
+}

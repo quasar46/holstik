@@ -1,0 +1,63 @@
+.popup {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.popup__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 463px;
+    border: 1px solid $color-black;
+    padding: 50px;
+    background-color: #fff;
+    z-index: 100;
+    h2 {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .buttons {
+        display: flex;
+        button,
+        select {
+            padding: 0 15px;
+            background-color: #fff;
+            line-height: 41px;
+            text-transform: uppercase;
+            font-size: 18px;
+            border: 1px solid $color-black;
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+        select {
+            border: 1px solid $color-black;
+            padding: 0 20px;
+            padding-right: 60px;
+            font-size: 17px;
+            text-transform: uppercase;
+            appearance: none;
+            background-image: url("../images/svg/arrow-down.svg");
+            background-repeat: no-repeat;
+            background-position: 92% center;
+            background-size: 15px auto;
+            @media (max-width: 768px) {
+                font-size: 13px;
+                padding: 5px 20px;
+                padding-right: 40px;
+                background-size: 10px auto;
+                background-position: 94% center;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

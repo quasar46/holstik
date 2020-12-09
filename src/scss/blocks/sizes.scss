@@ -1,0 +1,94 @@
+.sizes {
+    background-image: url("../images/grad.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    padding: 80px 0;
+    margin-bottom: 110px;
+    @media (max-width: 768px) {
+        padding: 40px 0;
+        padding-bottom: 0;
+        margin-bottom: 60px;
+        background-image: url("../images/sizes/bg-mobile.jpg");
+    }
+}
+
+.sizes__wrapper {
+    position: relative;
+    h2.main-title {
+        margin-bottom: 50px;
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    ul.mobile {
+        display: none;
+        .slick-track {
+            display: flex;
+            align-items: center;
+        }
+        li.item {
+            @media (max-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // margin: 0 50px;
+                &--1 {
+                    img {
+                        width: 194px;
+                    }
+                }
+                &--2 {
+                    img {
+                        width: 194px;
+                    }
+                }
+                &--3 {
+                    img {
+                        width: 176px;
+                    }
+                }
+                &--4 {
+                    img {
+                        width: 256px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
+    // .slick-next {
+    //     right: 0;
+    //     background-image: url("../images/svg/arrow-next.svg");
+    //     background-repeat: no-repeat;
+    //     background-size: 20px auto;
+    //     &::before {
+    //         content: "";
+    //     }
+    // }
+    // .slick-prev {
+    //     left: 0;
+    //     background-image: url("../images/svg/arrow-prev.svg");
+    //     background-repeat: no-repeat;
+    //     background-size: 20px auto;
+    //     &::before {
+    //         content: "";
+    //     }
+    // }
+    // .slick-track {
+    //     display: flex;
+    //     align-items: center;
+    // }
+}
+
+.sizes__desctop {
+    display: block;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}

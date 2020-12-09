@@ -1,0 +1,18 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+// @import "../fonts/stylesheet.scss";
+@import "variables.scss";
+@import "base.scss";
+
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/description";
+@import "blocks/action";
+@import "blocks/sizes";
+@import "blocks/delivery";
+@import "blocks/stages";
+@import "blocks/request";
+@import "blocks/clients";
+@import "blocks/question";
+@import "blocks/footer";
+@import "blocks/other";
+@import "blocks/popup";
